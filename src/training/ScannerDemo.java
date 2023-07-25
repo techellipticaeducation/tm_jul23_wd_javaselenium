@@ -15,5 +15,10 @@ public static void main(String[] args) {
 	
 	System.out.println("sum is : " + (i+j));
 	
+	String firstName = "Aditya";
+	String lastName = "singh";
+	
+	System.out.println(firstName + " " + lastName);
+	
 }
 }
