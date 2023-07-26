@@ -12,8 +12,6 @@ public class SumOfDigitDemo {
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter your number");
 			int number = scan.nextInt() ; // 9
-
-			
 			while(number != 0) {
 				sum = sum + number%10 ;
 				number =number / 10 ;
