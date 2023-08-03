@@ -6,9 +6,8 @@ public class SumOfDigitDemo {
 	public static void main(String[] args) {
 
 		// 134 = 1+3+4 = 8
-		int sum = -1; 
-		while(sum != 0) {
-			sum = 0;
+		while(true) {
+			int sum = 0;
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter your number");
 			int number = scan.nextInt() ; // 9
@@ -17,6 +16,9 @@ public class SumOfDigitDemo {
 				number =number / 10 ;
 			}
 			System.out.println("Sum is " + sum);
+			if(sum == 0) {
+				break;
+			}
 		}
 
 		// number = 135
