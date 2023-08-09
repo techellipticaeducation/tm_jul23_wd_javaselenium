@@ -5,16 +5,13 @@ import java.util.Scanner;
 public class SumOfDigitDemo {
 	public static void main(String[] args) {
 
+		SumOfDigitDemo s1 = new SumOfDigitDemo();
 		// 134 = 1+3+4 = 8
 		while(true) {
-			int sum = 0;
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter your number");
 			int number = scan.nextInt() ; // 9
-			while(number != 0) {
-				sum = sum + number%10 ;
-				number =number / 10 ;
-			}
+			int sum = s1.sumOfValue(number);
 			System.out.println("Sum is " + sum);
 			if(sum == 0) {
 				break;
@@ -37,4 +34,15 @@ public class SumOfDigitDemo {
 
 
 	}
+
+	public int sumOfValue(int number) {
+		int sum = 0;
+		while(number != 0) {
+			sum = sum + number%10 ;
+			number =number / 10 ;
+		}
+		return sum;
+	}
+
+
 }
