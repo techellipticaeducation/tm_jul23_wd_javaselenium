@@ -21,5 +21,4 @@ class Student{
 	public void start() {
 		String clgStart = "";
 	}
-
 }
