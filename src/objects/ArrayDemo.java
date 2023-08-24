@@ -6,6 +6,8 @@ public class ArrayDemo {
 		// school , 10th class (50 student) , - science , math, art, english, sst (5 subject)
 		// every student and every subject marks
 		// array = collection of ,object, datatype values , always provide same data type values
+		// 60D 
+		// 2D array = Excel Sheet 
 		int[][] mark = {
 				{45,34,78,89,23},
 				{78,89,23,89,23},
@@ -31,6 +33,8 @@ public class ArrayDemo {
 		// object
 		int[] mark1 = new int[2];
 		mark1[1] = 90;
+		
+		int[][] mark2 = new int[2][4];
 		
 		//            0 , 1, 2 ,3, 4
 		// indexing - 0 
