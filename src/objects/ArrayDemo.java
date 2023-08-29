@@ -46,9 +46,9 @@ public class ArrayDemo {
 		//System.out.println(mark[6]); // 56
 		// If we are trying to access value more then array upper bound then we will get array index out of bound exception
 		// 0 to 4
-//		for(int i = 0 ; i < mark1.length ; i++) {
-//			System.out.println(mark1[i]);
-//		}
+		for(int i = 0 ; i < mark1.length ; i++) {
+			System.out.println(mark1[i]);
+		}
 		
 		// foreach loop
 		
