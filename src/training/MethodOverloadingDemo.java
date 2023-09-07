@@ -15,7 +15,7 @@ public class MethodOverloadingDemo {
 
 
 class CalculatorProject{
-	public static int add(int k,int...i) {
+	public static int add(int...i) {  //{10,20,30}
 		int sum = 0;
 		for(int j = 0 ; j < i.length; j++) {
 			sum = sum + i[j];
