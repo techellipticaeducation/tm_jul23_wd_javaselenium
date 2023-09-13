@@ -30,7 +30,7 @@ class Audi extends Car{
 }
 
 
-// Method Overriding
+// Method Overriding - Runtime Polymorphism 
 // When Parent and child both are having same signature method. then child method override parent method
 // Rule for overriding
 // child method cannot reduce visibility of parent method  Access Modifier , public > protected > default 
