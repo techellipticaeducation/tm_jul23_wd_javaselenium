@@ -6,6 +6,7 @@ public class Demo1 {
 		c1.test1();
 		c1.test3();
 		System.out.println(c1.i);
+		
 	}
 }
 
@@ -49,5 +50,5 @@ class D extends A{
 // Multi level inheritance   A -> B -> C
 // Heirarchial Inheritance   one parent can have multiple child
 // Multiple Inheritance      one child can have multiple parent ?  Java doesnt not support multiple inheritance?
-//  because ambiguity due to same name method or attribute in multiple parents
+// because ambiguity due to same name method or attribute in multiple parents
 
