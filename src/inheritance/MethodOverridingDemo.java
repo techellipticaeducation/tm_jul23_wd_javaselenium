@@ -1,5 +1,7 @@
 package inheritance;
 
+
+// one file can have only 1 public class
 public class MethodOverridingDemo {
 
 	public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class MethodOverridingDemo {
 class Bank{
 	
 }
-class HDFC extends Bank{
+class HDFC1 extends Bank{
 	
 }
 
