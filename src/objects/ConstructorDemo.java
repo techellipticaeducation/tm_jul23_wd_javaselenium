@@ -1,7 +1,8 @@
 package objects;
 
 public class ConstructorDemo {
-	// Every class has a default constructor until we are not creating any explicit constructor
+	// Every class has a default constructor 
+//	until we are not creating any explicit constructor
 
 	// How to create explicit constructor
 	// it is like method but 
@@ -24,6 +25,7 @@ public class ConstructorDemo {
 	
 	ConstructorDemo(){
 		this("defaultname",10);
+		System.out.println("");
 	}
 	
 	ConstructorDemo(String name, int age){
