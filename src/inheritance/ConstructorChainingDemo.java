@@ -21,7 +21,6 @@ class J0{
 	J0(int i){
 		System.out.println("J0 class 1 param constructor");
 	}
-	
 }
 
 class J1 extends J0{
@@ -33,7 +32,6 @@ class J1 extends J0{
 		super(i);
 		System.out.println("J1 class 1 param constructor");
 	}
-	
 	
 	public void test1() {
 
