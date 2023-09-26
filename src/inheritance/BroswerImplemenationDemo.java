@@ -5,36 +5,45 @@ public class BroswerImplemenationDemo {
 		
 		Browser browser = new Chrome();
 		browser.opensite();
-		browser.click();
-		
-		
-//		Chrome ch1 = new Chrome();
-//		ch1.openchromesite();
-//		ch1.clickchrome();
-//
-//		
-//		Mozilla ch2 = new Mozilla();
-//		ch2.openmozillasite();
-//		ch2.clickmoziila();
-		
+		browser.click();		
 	}
 }
 
-class Browser{
-	public void opensite() {
-		System.out.println("opensite");
-	}
+// abstract class = partial abstraction (can contain abstract and non-abstract method)
+// anything which is abstract , we cannot create object for that (HAS-A)- Not allowed
+// abstract class contains abstract method , and abstract method never have body
+// You can inherit abstract class, but you cannot create object for abstract class
 
-	public void  click() {
-		System.out.println("click");
-	}
+// can we use final (IS-A relation not allowed) and abstract together (HAS-A)- Not allowed ?
+// we cannot use abstract and final together 
+
+// interface - full abstraction
+// implements
+// by default , all method of interface is abstract internally
+// with interface, i can provide multiple interfaces with single class
+
+// in class it is not possible because of multiple inheritance
+// variable in interface
+
+
+interface Browser{
+	
+//	public static final  
+	
+	int i = 10;
+	
+	public void opensite();
+	public void  click();
 }
 
+interface FastBrowser{
+	public void opensite();
+}
 
-
-class Chrome extends Browser{
+class Chrome implements Browser, FastBrowser{
 
 	public void opensite() {
+		System.out.println(Browser.i);
 		System.out.println(" Chromeopensite");
 	}
 
@@ -44,7 +53,7 @@ class Chrome extends Browser{
 	
 }
 
-class Mozilla extends Browser{
+class Mozilla implements Browser{
 	public void opensite() {
 		System.out.println(" mozilla opensite");
 	}
